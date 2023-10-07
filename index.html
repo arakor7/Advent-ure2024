@@ -1,28 +1,28 @@
-<html>  
-  <head>  
-    <title> Advent 2023 </title>  
-  </head>  
-  <body>  
-    <h3> Advent 2023 </h3>  
+<html>
+  <head>
+    <title> Advent 2023 </title>
+  </head>
+  <body> 
+    <h3> Advent 2023 </h3>
     <form form="Login_form" onsubmit="validate()">  
       <h4> Enter Codephrase 1</h4>  
       <input type="text" placeholder="Enter the first codephrase"/ id="codephrase1">  
       <h4> Enter Codephrase 2</h4>  
       <input type="password" placeholder="Enter the second codephrase"/ id="codephrase2"></br></br>  
-      <input type="submit" value="Commit">  
+      <input type="submit" value="Commit">
     </form>
-    <script type="text/javascript">  
+    <script type="text/javascript">
       function validate(){
         switch(document.getElementById("codephrase1")){
           case "hello":
             if (document.getElementbyId("codephrase2") == "world") {
-              text = "Login successfully"; 
+              text = "Login successfully";
             } else text = "Login Incorrect";
             default:
               text = "No value found";
         }
         alert(text);
       }
-    </script> 
+    </script>
   </body>
 </html>  
