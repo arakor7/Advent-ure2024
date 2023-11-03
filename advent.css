@@ -1,0 +1,53 @@
+h1{
+    color:#f0f8ff;
+    font-size: 72px;
+    font-family: Merienda;
+    text-shadow: 4px 4px #010125;
+}
+p{
+    color:#f0f8ff;
+    font-size: 22px;
+    font-family: Merienda;
+    text-shadow: 0px 0px 8px #010125;
+}
+body{
+    background-color: black;
+}
+.center{
+    margin: auto;
+    width: 75%;
+    padding: 200px;
+    text-align: center;
+}
+.text{
+    margin: auto;
+    width: 75%;
+    padding: 50px;
+    text-align:justify;
+}
+input{
+    width: 300px;
+    padding: 12px 20px;
+    margin 8px 0;
+    box-sizing: border-box;
+    border: 10px black;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: aliceblue;
+    font-family: Merienda;
+}
+button{
+    background-color: #183166;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 4px black;
+    border-radius: 8px;
+    font-family: Merienda;
+}
+
+    
