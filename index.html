@@ -2,6 +2,9 @@
 <html>
 <head>
     <title>Advent-ure 2023</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
     <style>
         body{
             background-image: url('./images/gems.jpeg');
@@ -15,13 +18,24 @@
         p{
 
         }
-        .elements{
-            display: flexbox;
-            align-items: center;
-            vertical-align: middle;
+        .center{
+            margin: auto;
+            width: 75%;
+            padding: 200px;
+            text-align: center;
+        }
+        input{
+            width: 300px;
+            padding: 12px 20px;
+            margin 8px 0;
+            box-sizing: border-box;
+            border: 10px black;
+            border-radius: 8px;
+            font-size: 16px;
+            background-color: aliceblue;
         }
         button{
-            background-color: #1f48a0; /* Green */
+            background-color: #183166;
             border: none;
             color: white;
             padding: 15px 32px;
@@ -29,6 +43,8 @@
             text-decoration: none;
             display: inline-block;
             font-size: 16px;
+            border: 4px black;
+            border-radius: 8px;
 
         }
     </style>
@@ -43,7 +59,7 @@
 </head>
 
 <body>
-    <div class="elements">
+    <div class="center">
         <h1>Where are you going?</h1>
         <input type="text" id="wordInput">
         <button onclick="redirectToNewPage()">Roll a Perception Check</button>
