@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Page</title>
+</head>
+<body>
+    <h2>You entered:</h2>
+    <p>
+        <?php
+        if(isset($_GET['word'])) {
+            echo $_GET['word'];
+        }
+        ?>
+    </p>
+</body>
+</html>

@@ -1,111 +1,34 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title> Advent 2023</title>
-
-    <!-- CSS FILES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&amp;display=swap" rel="stylesheet">
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-icons.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/slick.css">
-
-    <link href="css/tooplate-little-fashion.css" rel="stylesheet">
-<!--
-
-Tooplate 2127 Little Fashion
-
-https://www.tooplate.com/view/2127-little-fashion
-
--->
-</head>
-  <body>
-    <section class="slick-slideshow">   
-      <div class="slick-custom">
-          <img src="images/slideshow/medium-shot-business-women-high-five.jpeg" class="img-fluid" alt="">
-
-          <div class="slick-bottom">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-lg-6 col-10">
-                          <h1 class="slick-title">Cool Fashion</h1>
-
-                          <p class="lead text-white mt-lg-3 mb-lg-5">Little fashion template comes with total 8 HTML pages provided by Tooplate website.</p>
-
-                          <a href="about.html" class="btn custom-btn">Learn more about us</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-
-      <div class="slick-custom">
-          <img src="images/slideshow/team-meeting-renewable-energy-project.jpeg" class="img-fluid" alt="">
-
-          <div class="slick-bottom">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-lg-6 col-10">
-                          <h1 class="slick-title">New Design</h1>
-
-                          <p class="lead text-white mt-lg-3 mb-lg-5">Please share this Little Fashion template to your friends. Thank you for supporting us.</p>
-
-                          <a href="product.html" class="btn custom-btn">Explore products</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-
-      <div class="slick-custom">
-          <img src="images/slideshow/two-business-partners-working-together-office-computer.jpeg" class="img-fluid" alt="">
-
-          <div class="slick-bottom">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-lg-6 col-10">
-                          <h1 class="slick-title"> Advent 2023</h1>
-
-                          <p class="lead text-white mt-lg-3 mb-lg-5">Take your chances... Roll the dice</p>
-
-                          <a href="contact.html" class="btn custom-btn">Roll a Perception Check</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-
-  </section>
-    <h3> Advent 2023 </h3>
-    <form form="Login_form" onsubmit="validate()">  
-      <h4> Enter Codephrase 1</h4>  
-      <input type="text" placeholder="Enter the first codephrase"/ id="codephrase1">  
-      <h4> Enter Codephrase 2</h4>  
-      <input type="password" placeholder="Enter the second codephrase"/ id="codephrase2"></br></br>  
-      <input type="submit" value="Commit">
-    </form>
-    <script type="text/javascript">
-      function validate(){
-        switch(document.getElementById("codephrase1")){
-          case "hello":
-            if (document.getElementbyId("codephrase2") == "world") {
-              text = "Login successfully";
-            } else text = "Login Incorrect";
-            default:
-              text = "No value found";
+<head>
+    <title>Advent-ure 2023</title>
+    <style>
+        body{
+            background-image: url('./images/two-business-partners-working-together-office-computer.jpeg');
         }
-        alert(text);
-      }
+        h1{
+
+        }
+        p{
+
+        }
+        button{
+
+        }
+    </style>
+    <script>
+        function redirectToNewPage() {
+            var word = document.getElementById('wordInput').value;
+            if (word) {
+                window.location.href = './'+ word;
+            }
+        }
     </script>
-  </body>
-</html>  
+</head>
+
+<body>
+    <h2>Enter the codephrase:</h2>
+    <input type="text" id="wordInput">
+    <button onclick="redirectToNewPage()">Roll a Perception Check</button>
+</body>
+</html>
