@@ -4,15 +4,31 @@
     <title>Advent-ure 2023</title>
     <style>
         body{
-            background-image: url('./images/two-business-partners-working-together-office-computer.jpeg');
+            background-image: url('./images/gems.jpeg');
+            background-size: cover;
         }
         h1{
-
+            color:#f0f8ff;
+            outline: 1px black;
+            font-size: 72px;
         }
         p{
 
         }
+        .elements{
+            display: flexbox;
+            align-items: center;
+            vertical-align: middle;
+        }
         button{
+            background-color: #1f48a0; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
 
         }
     </style>
@@ -27,8 +43,10 @@
 </head>
 
 <body>
-    <h2>Enter the codephrase:</h2>
-    <input type="text" id="wordInput">
-    <button onclick="redirectToNewPage()">Roll a Perception Check</button>
+    <div class="elements">
+        <h1>Where are you going?</h1>
+        <input type="text" id="wordInput">
+        <button onclick="redirectToNewPage()">Roll a Perception Check</button>
+    </div>
 </body>
 </html>
