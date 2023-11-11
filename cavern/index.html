@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advent-ure 2023</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/advent.css">
+    <script>
+        function redirectToNewPage() {
+            var word = document.getElementById('wordInput').value;
+            if (word) {
+                window.location.href = './'+ word + '.html';
+            }
+        }
+    </script>
+    <style>
+        body{
+            background-image: 
+                linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), 
+                url('/images/cave.jpeg');
+            background-size: cover;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text">
+        <p>You emerge into a dark cavern, with a worn pathway leading you onward. You follow it for a while, listening to the drips and drops of water as it falls from stalactites onto stalagmites. You walk for an hour, maybe 2, before coming to a deep, deep chasm, with another podium nearby. Across the way, you can see the pathway continues. If you can find a way across safely, you think you’ll be able to finally escape.</p>
+    </div>
+    <div class="center">
+        <h1>What shape is revealed?</h1>
+        <input type="text" id="wordInput">
+        <button onclick="redirectToNewPage()">Roll a Performance Check</button>
+    </div>
+</body>
+</html>

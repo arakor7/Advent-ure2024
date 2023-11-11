@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advent-ure 2023</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/advent.css">
+    <script>
+        function redirectToNewPage() {
+            var word = document.getElementById('wordInput').value;
+            if (word) {
+                window.location.href = './'+ word + '.html';
+            }
+        }
+    </script>
+    <style>
+        body{
+            background-image: 
+                linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), 
+                url('/images/cave.jpeg');
+            background-size: cover;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text">
+        <p>As you move forward, the air gets both crisper, and colder. You must be nearing the exit. You enter a long corridor with an impressive display of runes and images on the floor. You quickly figure out that this must be part of the security system. One wrong step will lead to your certain death, or at least a grievous wound.</p>
+        <p>You look around, and see a set of instructions engraved in a column, completely invisible from the other side of the room. Looks like getting out is going to be a lot easier than if you were trying to get in.</p>
+    </div>
+    <div class="center">
+        <h1>Which shapes should you press?</h1>
+        <input type="text" id="wordInput">
+        <button onclick="redirectToNewPage()">Roll an Athletics Check</button>
+    </div>
+</body>
+</html>
