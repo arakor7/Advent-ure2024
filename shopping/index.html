@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advent-ure 2023</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/advent.css">
+    <script>
+        function redirectToNewPage() {
+            var word = document.getElementById('wordInput').value;
+            if (word) {
+                window.location.href = './'+ word + '.html';
+            }
+        }
+    </script>
+    <style>
+        body{
+            background-image: 
+                linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), 
+                url('/images/hamlet.jpeg');
+            background-size: cover;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text">
+        <p>It’s been weeks, but you and the crew have had relatively safe travel between Stormvault and Padsted. Apparently breaking out of jail together does wonders for building a friendship. You’ve convinced them to travel with you, and since they know they’d end up back in prison if they went back to their old lives, they’ve agreed to stick together. You head to the Inn, The Bronze Boar, easily recognizable by the literal bronze boar’s head hanging above the doorway. You inquire about a room and any work in the area. The bartender Harland mentions that he’s been so busy lately that he’s behind on getting some supplies and would appreciate it if you’d go around and complete his shopping list for him. Also, he’d like you to give the list to Hesig when you’re done. You find it to be an odd request, but don’t see the harm. </p>
+        <img src="note.png" alt="written note" width="100%">
+    </div>
+    <div class="center">
+        <h1>What is hidden in Harland's note?</h1>
+        <input type="text" id="wordInput">
+        <button onclick="redirectToNewPage()">Roll an Investigation Check</button>
+    </div>
+</body>
+</html>
