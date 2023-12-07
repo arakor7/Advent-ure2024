@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/advent.css">
+    <link rel="stylesheet" href="../advent.css">
     <script>
         function redirectToNewPage() {
             var word = document.getElementById('wordInput').value;
@@ -18,18 +18,21 @@
         body{
             background-image: 
                 linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), 
-                url('/images/hamlet.jpeg');
+                url('../images/hamlet.jpeg');
             background-size: cover;
             
         }
     </style>
 </head>
+
 <body>
     <div class="text">
-        <p>He thanks you profusely for fixing the carpet and gives you three rocks he claims are special and a bit of information on where to look for an ornate chest. He recommends that you head down to the docks early tomorrow morning, and to keep your eye open. </p>
+        <p>As you prepare to head out again looking for the chest, the innkeeper comes up to you with a very concerned look on his face. It seems like the package that you informed him about was delivered late last night - an elaborate carpet that had been draped over his fence. Unfortunately, his pet cat had shredded the carpet while sharpening its claws, and if he doesn't get it repaired, he's going to have to pay for it out of his own funds. And he doesn't have the funds. </p>
     </div>
     <div class="center">
-        <h1>Sparky knows she shouldn't sharpen her claws on the carpets or furniture.</h1>
+        <h1>What image is on the carpet?</h1>
+        <input type="text" id="wordInput">
+        <button onclick="redirectToNewPage()">Roll a Dexterity Check</button>
     </div>
 </body>
 </html>
