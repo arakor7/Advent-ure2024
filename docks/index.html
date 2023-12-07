@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Advent-ure 2023</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,25 +11,32 @@
         function redirectToNewPage() {
             var word = document.getElementById('wordInput').value;
             if (word) {
-                window.location.href = './'+ word + '.html';
+                window.location.href = './' + word + '.html';
             }
         }
     </script>
     <style>
-        body{
-            background-image: 
-                linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), 
+        body {
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
                 url('../images/hamlet.jpeg');
             background-size: cover;
-            
+
         }
     </style>
 </head>
 
 <body>
     <div class="text">
-        <p>You arrive at the docks early the next day and see a few porters loading and unloading the smaller boats that travel up and down the river that runs through the town. You're keeping your eyes open, but don't see any ornate chests around the area. You head down to the loading area and try to talk to some of the dock workers about what types of goods they are moving around, but you get the cold shoulder from everyone. Finally, Ellel leans over and whispers, “Something isn't right here, I think there's a smuggling operation going on.”</p> 
-        <p>You find a small breakfast place a short way down the road and sit down for a delicious Breakfast Scrample, a local delicacy. From there, you all piece together a drawing of what you saw, and Ellel fills in some strange characters that she saw on some of the crates. </p>
+        <p>You arrive at the docks early the next day and see a few porters loading and unloading the smaller boats that
+            travel up and down the river that runs through the town. You're keeping your eyes open, but don't see any
+            ornate chests around the area. You head down to the loading area and try to talk to some of the dock workers
+            about what types of goods they are moving around, but you get the cold shoulder from everyone. Finally,
+            Ellel leans over and whispers, "Something isn't right here, I think there's a smuggling operation going on."
+        </p>
+        <p>You find a small breakfast place a short way down the road and sit down for a delicious Breakfast Scrample, a
+            local delicacy. From there, you all piece together a drawing of what you saw, and Ellel fills in some
+            strange characters that she saw on some of the crates. </p>
         <p></p>
         <img src="cargo.png" alt="crates and sacks" width="100%">
     </div>
@@ -38,4 +46,5 @@
         <button onclick="redirectToNewPage()">Cast Comprehend Languages</button>
     </div>
 </body>
+
 </html>
