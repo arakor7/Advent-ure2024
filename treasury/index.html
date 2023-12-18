@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advent-ure 2023</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../advent.css">
+    <script>
+        function redirectToNewPage() {
+            var word = document.getElementById('wordInput').value;
+            if (word) {
+                window.location.href = './'+ word + '.html';
+            }
+        }
+    </script>
+    <style>
+        body{
+            background-image: 
+                linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), 
+                url('../images/beach.jpeg');
+            background-size: cover;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text">
+        <p>You were able to find a captain willing to take his crew on a trip to the islands, with the promise of a share of the treasure you might find.  Before he is ready to set sail though, he wants to be a little more prepared.  He knows of a room that is used to store goods that have been "reclaimed" from various sailing groups.</p>
+        <p>He asks that you and your friends make into the room and find anything that might be useful in future battles.</p>
+        <p>Following his directions, you find the door, with is curiously inset with 6 small shelves.  There are some gems on the shelves, but there are far more gems in a pile nearby.  Below the shelves is a series of the 6 colored gems - white, red, yellow, green, blue and orange. Upon a closer investigation, it looks like the gems under the shelves can be pushed in slightly, but not removed.
+    </div>
+    <div class="center">
+        <h1>Using a dash to separate the colors, which gems should you press.</h1>
+        <input type="text" id="wordInput">
+        <button onclick="redirectToNewPage()">Roll an Intelligence Check</button>
+    </div>
+</body>
+</html>
