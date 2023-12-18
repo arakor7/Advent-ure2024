@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advent-ure 2023</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../advent.css">
+    <script>
+        function redirectToNewPage() {
+            var word = document.getElementById('wordInput').value;
+            if (word) {
+                window.location.href = './'+ word + '.html';
+            }
+        }
+    </script>
+    <style>
+        body{
+            background-image: 
+                linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), 
+                url('../images/beach.jpeg');
+            background-size: cover;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="text">
+        <p>With the map put together, you think you might have a clue as to where you should go next.</p>
+    </div>
+    <div class="center">
+        <h1>Sparky is doing a puzzle as well.</h1>
+    </div>
+</body>
+</html>
