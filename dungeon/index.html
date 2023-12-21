@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advent-ure 2023</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../advent.css">
+    <script>
+        function redirectToNewPage() {
+            var word = document.getElementById('wordInput').value;
+            if (word) {
+                window.location.href = './'+ word + '.html';
+            }
+        }
+    </script>
+    <style>
+        body{
+            background-image: 
+                linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), 
+                url('../images/beach.jpeg');
+            background-size: cover;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text">
+        <p>You begin searching the area for an entrance to the underground dungeon you saw in your vision, but nothing can be found. Ellel takes to the air, and does a few circles around the area, and then swoops down. You head in that direction, and see the outlines of some shapes, along with small, lightweight colored pieces that seem to fit inside. </p>
+        <img src="undergroundruins.png" alt="crates and sacks" width="100%">
+    </div>
+    <div class="center">
+        <h1>What word should yu say?</h1>
+        <input type="text" id="wordInput">
+        <button onclick="redirectToNewPage()">Roll a Performance Check</button>
+    </div>
+</body>
+</html>
