@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advent-ure 2023</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../advent.css">
+    <script>
+        function redirectToNewPage() {
+            var word = document.getElementById('wordInput').value;
+            if (word) {
+                window.location.href = './'+ word + '.html';
+            }
+        }
+    </script>
+    <style>
+        body{
+            background-image: 
+                linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), 
+                url('../images/undergroundruins.jpeg');
+            background-size: cover;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text">
+        <p> Inside is probably the darkest area you've ever seen. You step inside, fearlessly, and then realize that even darkvision isn't working the way it's supposed to here. You can see about 5 feet in front of you, but that's about it. Fortunately, Sarash is able to make out some candles, and is about to light them when something else catches his eye, and he calls you over to investigate. It's a good thing he did, because you suspect that lighting the wrong candles (or lighting them in the wrong order) would bring death or dismemberment.</p>
+    </div>
+    <div class="center">
+        <h1>Separated by dashes, what order should you light candles?</h1>
+        <input type="text" id="wordInput">
+        <button onclick="redirectToNewPage()">Roll an Intelligence Check</button>
+    </div>
+</body>
+</html>
